@@ -16,15 +16,22 @@
     size: portrait;
 }
 </style>
-<img src="<?php echo base_url('assets/images/kop-surat.png'); ?>" width="100%">
-<br /><br /><br />
+<img src="<?php echo base_url('assets/images/KopBoyo.png'); ?>" width="100%">
+<table width="100%">
+<tr>
+        <td width="15%">Kode Desa</td>
+        <td width="1%">:</td>
+        <td width="84%">3309182005</td>
+    </tr>
+</table>
+<br /><br />
 <center>
     <font size="5"><u><b>SURAT KETERANGAN DESA</b></u></font><br />Nomor:
     145/<?php echo $belum_sekolah->id_belum_sekolah; ?>/DS/<?php echo substr($belum_sekolah->tanggal_belum_sekolah, 0, 4); ?>
 </center>
 <br /><br /><br />
 <font align="justify">
-    Yang bertanda tangan dibawah ini , Kepala Desa Warungbambu Kecamatan Karawang Timur Kabupaten Karawang Provinsi Jawa
+    Yang bertanda tangan dibawah ini , Kepala Desa Banyusri Kecamatan Wonosegoro Kabupaten Boyolali Provinsi Jawa
     Barat
 </font>
 <table width="100%">
@@ -68,7 +75,7 @@
 </table>
 <br /><br />
 <font align="justify">
-    Nama / Orang tersebut benar Warga Desa Warungbambu Kecamatan Karawang Timur Kabupaten Karawang , Menerangkan dengan
+    Nama / Orang tersebut benar Warga Desa Banyusri Kecamatan Wonosegoro Kabupaten Boyolali , Menerangkan dengan
     benar Nama tersebut <b><i>belum pernah sekolah.</i></b><br /><br />
     Demikian Surat Keterangan ini dibuat dengan sebenarnya, untuk dapat dipergunakan sesuai keperluannya serta agar yang
     berkepentingan menjadi maklum.<br /><br /><br />
@@ -77,19 +84,19 @@
     <tr>
         <td width="50%"></td>
         <td width="50%">
-            <center>Warungbambu, <?= date('d F Y', strtotime($belum_sekolah->tanggal_belum_sekolah)); ?></center>
+            <center>Banyusri, <?= date('d F Y', strtotime($belum_sekolah->tanggal_belum_sekolah)); ?></center>
         </td>
     </tr>
     <tr>
         <td></td>
         <td>
-            <center>Kepala Desa Warungbambu</center>
+            <center>Kepala Desa Banyusri</center>
         </td>
     </tr>
     <tr>
         <td></td>
         <td>
-            <center>Kecamatan Karawang Timur</center>
+            <center>Kecamatan Wonosegoro</center>
         </td>
     </tr>
     <tr>

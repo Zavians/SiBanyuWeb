@@ -16,8 +16,15 @@
     size: portrait;
 }
 </style>
-<img src="<?php echo base_url('assets/images/kop-surat.png'); ?>" width="100%">
-<br /><br /><br />
+<img src="<?php echo base_url('assets/images/KopBoyo.png'); ?>" width="100%">
+<table width="100%">
+<tr>
+        <td width="15%">Kode Desa</td>
+        <td width="1%">:</td>
+        <td width="84%">3309182005</td>
+    </tr>
+</table>
+<br /><br />
 <center>
     <font size="5"><u><b>SURAT KETERANGAN</b></u></font><br />Nomor:
     145/<?php echo $penghasilan->id_penghasilan; ?>/DS/<?php echo substr($penghasilan->tanggal_penghasilan, 0, 4); ?>
@@ -105,7 +112,7 @@
 <br />
 <font align="justify">
     Surat Keterangan ini dinyatakan tidak berlaku apabila terjadi pelanggaran peraturan perundang-undangan dan perda
-    Kabupaten Karawang serta, apabila terdapat kekeliruan/kesalahan dalam pembuatannya. Pemohon/pemegang bersedia
+    Kabupaten Boyolali serta, apabila terdapat kekeliruan/kesalahan dalam pembuatannya. Pemohon/pemegang bersedia
     mempertanggung jawabakan secara hukum tanpa melibatkan pihak manapun<br />
 
     Demikian surat keterangan ini dibuat dengan sebenarnya serta dapat dipergunakan sebagaimana mestinya.<br /><br />
@@ -114,7 +121,7 @@
     <tr>
         <td width="50%"></td>
         <td width="50%">
-            <center>Warungbambu, <?= date('d F Y', strtotime($penghasilan->tanggal_penghasilan)); ?></center>
+            <center>Banyusri, <?= date('d F Y', strtotime($penghasilan->tanggal_penghasilan)); ?></center>
         </td>
     </tr>
     <tr>
@@ -122,13 +129,13 @@
             <center>Yang Bersangkutan</center>
         </td>
         <td>
-            <center>Kepala Desa Warungbambu</center>
+            <center>Kepala Desa Banyusri</center>
         </td>
     </tr>
     <tr>
         <td></td>
         <td>
-            <center>Kecamatan Karawang Timur</center>
+            <center>Kecamatan Wonosegoro</center>
         </td>
     </tr>
     <tr>

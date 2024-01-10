@@ -10,7 +10,7 @@ class Dashboard extends CI_Controller {
 	}
 
 	public function index() {
-		$data['title'] = "Dashboard - Desa Warung Bambu";
+		$data['title'] = "Dashboard - Desa Banyusri";
 
 		$this->load->view('header', $data);
 		$this->load->view('dashboard');

@@ -16,7 +16,7 @@
         size: portrait;
     }
 </style>
-<img src="<?php echo base_url('assets/images/kop-surat.png'); ?>" width="100%">
+<img src="<?php echo base_url('assets/images/KopBoyo.png'); ?>" width="100%">
 <br /><br /><br />
 <center>
     <font size="5"><u><b>SURAT KETERANGAN USAHA</b></u></font><br />Nomor:
@@ -24,8 +24,8 @@
 </center>
 <br /><br /><br />
 <font align="justify">
-    Yang bertanda tangan dibawah ini , <?php echo $usaha->jabatan_pejabat; ?> Desa Warungbambu Kecamatan Karawang Timur
-    Kabupaten Karawang Provinsi Jawa Barat
+    Yang bertanda tangan dibawah ini , <?php echo $usaha->jabatan_pejabat; ?> Desa Banyusri Kecamatan Wonosegoro
+    Kabupaten Boyolali Provinsi Jawa Tengah
 </font>
 <table width="100%">
     <tr>
@@ -66,8 +66,8 @@
 </table>
 <br>
 <font align="justify">
-    Menurut penelitian dan Pengantar RT setempat Nama/Orang tersebut benar Warga Desa Warungbambu Kecamatan Karawang
-    Timur Kabupaten Karawang , bahwa yang bersangkutan benar Membuka / Mempunyai Usaha
+    Menurut penelitian dan Pengantar RT setempat Nama/Orang tersebut benar Warga Desa Banyusri Kecamatan Boyolali
+    Timur Kabupaten Boyolali , bahwa yang bersangkutan benar Membuka / Mempunyai Usaha
     "<?php echo $usaha->nama_usaha; ?>" di Alamat Usaha <?php echo $usaha->alamat; ?> , sejak tahun
     <?php echo $usaha->sejak_usaha; ?> sampai sekarang .<br /><br />
     Demikian Surat Keterangan Usaha ini dibuat dengan sebenarnya, untuk dapat dipergunakan sesuai keperluannya serta
@@ -77,7 +77,7 @@
     <tr>
         <td width="50%"></td>
         <td width="50%">
-            <center>Warungbambu, <?= date('d F Y', strtotime($usaha->tanggal_usaha)); ?></center>
+            <center>Banyusri, <?= date('d F Y', strtotime($usaha->tanggal_usaha)); ?></center>
         </td>
     </tr>
     <tr>
@@ -85,7 +85,7 @@
             <center>Yang Bersangkutan</center>
         </td>
         <td>
-            <center>Kepala Desa Warungbambu</center>
+            <center>Kepala Desa Banyusri</center>
         </td>
     </tr>
     <tr>

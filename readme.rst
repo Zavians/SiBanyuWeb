@@ -36,7 +36,7 @@ Instalasi & Konfigurasi
 *********
 Tentang Saya
 *********
-Saya salah satu Mahasiswa di Perguruan Tinggi swasta Karawang 
+Saya salah satu Mahasiswa di Perguruan Tinggi swasta Boyolali 
 
 
 https://www.instagram.com/khoirulsyarif/

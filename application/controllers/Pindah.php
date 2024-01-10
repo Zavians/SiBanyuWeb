@@ -13,7 +13,7 @@ class Pindah extends CI_Controller
 	}
 	public function tampil()
 	{
-		$data['title'] = "Data Pindah  - Desa Warung Bambu";
+		$data['title'] = "Data Pindah  - Desa Banyusri";
 		$data['pindah'] = $this->m_pindah->tampil();
 
 		$mutasi = $this->load->view('header', $data);
@@ -22,7 +22,7 @@ class Pindah extends CI_Controller
 	}
 	public function tampil_pindah2()
 	{
-		$data['title'] = "Data Pindah  - Desa Warung Bambu";
+		$data['title'] = "Data Pindah  - Desa Banyusri";
 		$data['pindah'] = $this->m_pindah->tampil();
 
 		$mutasi = $this->load->view('header', $data);
@@ -32,7 +32,7 @@ class Pindah extends CI_Controller
 
 	public function tambah()
 	{
-		$data['title'] = "Tambah Pindah  - Desa Warung Bambu";
+		$data['title'] = "Tambah Pindah  - Desa Banyusri";
 
 		$this->load->view('header', $data);
 		$this->load->view('pindah/tambah_pindah');
@@ -76,7 +76,7 @@ class Pindah extends CI_Controller
 
 	public function edit($nik)
 	{
-		$data['title'] = "Edit Pindah  - Desa WarungBambu";
+		$data['title'] = "Edit Pindah  - Desa Banyusri";
 		$data['pindah'] = $this->m_pindah->edit($nik);
 
 		$this->load->view('header', $data);
@@ -132,7 +132,7 @@ class Pindah extends CI_Controller
 	public function detail($nik)
 	{
 
-		$data['title'] = "Detail Pindah  - Desa Warung Bambu";
+		$data['title'] = "Detail Pindah  - Desa Banyusri";
 		$this->load->model('m_pindah');
 
 		$detail = $this->m_pindah->detail($nik);

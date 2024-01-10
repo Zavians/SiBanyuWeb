@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Login - Sistem Pengelolaan Data Penduduk</title>
+  <title>Login - SiBanyu</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--===============================================================================================-->
-  <link rel="icon" type="image/png" href="<?php echo base_url(); ?>assets/images/logo-karawang.png"/>
+  <link rel="icon" type="image/png" href="<?php echo base_url(); ?>assets/images/logo-Boyolali.png"/>
   <!--===============================================================================================-->
   <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/login_/vendor/bootstrap/css/bootstrap.min.css">
   <!--===============================================================================================-->
@@ -89,9 +89,9 @@
 
   <div class="right-side">
     <form class="login-form" action="<?php echo base_url('login/auth'); ?>" method="post" class="" role="form">
-      <img src="<?php echo base_url(); ?>/assets/images/logo-karawang.png" alt="Logo" />
+      <img src="<?php echo base_url(); ?>/assets/images/logo-Boyolali.png" alt="Logo" />
       <span class="login100-form-title p-b-26">
-        SISTEM PENGELOLAAN DATA PENDUDUK <br> DESA WARUNGBAMBU
+        SISTEM PENGELOLAAN DATA PENDUDUK <br> DESA BANYUSRI
       </span>
       <?php if ($this->session->flashdata('gagal')) { ?>
         <div class="callout callout-danger">

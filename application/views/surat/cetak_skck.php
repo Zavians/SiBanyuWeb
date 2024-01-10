@@ -16,16 +16,23 @@
     size: portrait;
 }
 </style>
-<img src="<?php echo base_url('assets/images/kop-surat.png'); ?>" width="100%">
-<br /><br /><br />
+<img src="<?php echo base_url('assets/images/KopBoyo.png'); ?>" width="100%">
+<table width="100%">
+<tr>
+        <td width="15%">Kode Desa</td>
+        <td width="1%">:</td>
+        <td width="84%">3309182005</td>
+    </tr>
+</table>
+<br /><br />
 <center>
     <font size="5"><u><b>SURAT KETERANGAN SKCK</b></u></font><br />Nomor:
     470/<?php echo $skck->id_skck; ?>/DS/<?php echo substr($skck->tanggal_skck, 0, 4); ?>
 </center>
 <br /><br /><br />
 <font align="justify">
-    Yang bertandatangan di bawah ini , <?php echo $skck->jabatan_pejabat; ?> Desa Warungbambu Kecamatan Karawang Timur
-    Kabupaten Karawang Provinsi Jawa Barat
+    Yang bertandatangan di bawah ini , <?php echo $skck->jabatan_pejabat; ?> Desa Banyusri Kecamatan Wonosegoro
+    Kabupaten Boyolali Provinsi Jawa Tengah
 </font>
 <table width="100%">
     <tr>
@@ -90,13 +97,13 @@
     <tr>
         <td width="50%"></td>
         <td width="50%">
-            <center>Warungbambu, <?= date('d F Y', strtotime($skck->tanggal_skck)); ?></center>
+            <center>Banyusri, <?= date('d F Y', strtotime($skck->tanggal_skck)); ?></center>
         </td>
     </tr>
     <tr>
         <td></td>
         <td>
-            <center>Kepala Desa Warungbambu</center>
+            <center>Kepala Desa Banyusri</center>
         </td>
     </tr>
     <tr>

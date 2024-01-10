@@ -15,8 +15,15 @@
 		size: portrait;
 	}
 </style>
-<img src="<?php echo base_url('assets/images/kop-surat.png'); ?>" width="100%">
-<br /><br /><br />
+<img src="<?php echo base_url('assets/images/KopBoyo.png'); ?>" width="100%">
+<table width="100%">
+<tr>
+        <td width="15%">Kode Desa</td>
+        <td width="1%">:</td>
+        <td width="84%">3309182005</td>
+    </tr>
+</table>
+<br /><br />
 <center><font size="5"><u><b>SURAT KETERANGAN</b></u></font><br />Nomor: 470/<?php echo $batal_pindah->id_batal_pindah; ?>/II/DS/<?php echo substr($batal_pindah->tanggal_batal_pindah, 0, 4); ?></center>
 <br /><br />
 <font align="justify">
@@ -92,7 +99,7 @@ Menerangkan dengan sebenarnya bahwa :
 </table>
 <br />
 <font align="justify">
-Menurut penilitian kami dan surat pengantar dari RT-nya bahwa Nama/Orang tersebut benar Warga Desa Warungbambu, dan bertempat tinggal dialamat tersebut diatas. Menerangkan bahwa yang bersangkutan diatas benar batal Pindah ke alamat di bawah ini;<br />
+Menurut penilitian kami dan surat pengantar dari RT-nya bahwa Nama/Orang tersebut benar Warga Desa Banyusri, dan bertempat tinggal dialamat tersebut diatas. Menerangkan bahwa yang bersangkutan diatas benar batal Pindah ke alamat di bawah ini;<br />
 </font>
 <center><?php echo $batal_pindah->alamat_batal_pindah; ?></center><br /><br />
 <font align="justify">
@@ -101,15 +108,15 @@ Demikian surat keterangan ini kami buat dengan sebenarnya dan dapat dipergunakan
 <table width="100%">
 	<tr>
 		<td width="50%"></td>
-		<td width="50%"><center>Warungbambu, <?=date('d F Y', strtotime($batal_pindah->tanggal_batal_pindah));?></center></td>
+		<td width="50%"><center>Banyusri, <?=date('d F Y', strtotime($batal_pindah->tanggal_batal_pindah));?></center></td>
 	</tr>
 	<tr>
 		<td><center></center></td>
-		<td><center>Kepala Desa Warungbambu</center></td>
+		<td><center>Kepala Desa Banyusri</center></td>
 	</tr>
 	<tr>
 		<td></td>
-		<td><center>Kecamatan Karawang Timur</center></td>
+		<td><center>Kecamatan Wonosegoro</center></td>
 	</tr>
 	<tr>
 		<td></td>

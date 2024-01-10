@@ -16,26 +16,31 @@
 	}
 </style>
 <table width="100%">
-	<tr>
-		<td width="15%">Desa/Kelurahan</td>
-		<td width="1%">:</td>
-		<td width="84%">WARUNGBAMBU</td>
-	</tr>
-	<tr>
-		<td>Kecamatan</td>
-		<td>:</td>
-		<td>KARAWANG TIMUR</td>
-	</tr>
-	<tr>
-		<td>Kabupaten</td>
-		<td>:</td>
-		<td>KARAWANG</td>
-	</tr>
-	<tr>
-		<td>Provinsi</td>
-		<td>:</td>
-		<td>JAWA BARAT</td>
-	</tr>
+<tr>
+        <td width="15%">Desa/Kelurahan</td>
+        <td width="1%">:</td>
+        <td width="84%">BANYUSRI</td>
+    </tr>
+    <tr>
+        <td>Kecamatan</td>
+        <td>:</td>
+        <td>WONOSEGORO</td>
+    </tr>
+    <tr>
+        <td>Kabupaten</td>
+        <td>:</td>
+        <td>BOYOLALI</td>
+    </tr>
+    <tr>
+        <td>Provinsi</td>
+        <td>:</td>
+        <td>Jawa Tengah</td>
+    </tr>
+    <tr>
+        <td>Kode Desa</td>
+        <td>:</td>
+        <td>3309182005</td>
+    </tr>
 </table>
 <?php $pemohon = $this->db->query("SELECT * FROM penduduk WHERE nik='$pindah->nik_pemohon'")->row(); ?>
 <br /><br />
@@ -180,11 +185,11 @@ Surat Keterangan Pindah (SKP) ini berlaku sebagai pengganti KTP selama KTP baru 
 <table width="100%">
 	<tr>
 		<td width="50%"></td>
-		<td width="50%"><center>Warungbambu, <?php echo $pindah->tanggal_pindah; ?></center></td>
+		<td width="50%"><center>Banyusri, <?php echo $pindah->tanggal_pindah; ?></center></td>
 	</tr>
 	<tr>
 		<td></td>
-		<td><center>Dikeluarkan oleh: <br />a.n. Kepala Dinas Kependudukan dan Pencatatan Sipil<br />Kepala Desa Warungbambu</center></td>
+		<td><center>Dikeluarkan oleh: <br />a.n. Kepala Dinas Kependudukan dan Pencatatan Sipil<br />Kepala Desa Banyusri</center></td>
 	</tr>
 	<tr>
 		<td></td>

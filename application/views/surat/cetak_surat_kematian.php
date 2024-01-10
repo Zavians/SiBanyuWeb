@@ -20,22 +20,27 @@
     <tr>
         <td width="15%">Desa/Kelurahan</td>
         <td width="1%">:</td>
-        <td width="84%">WARUNGBAMBU</td>
+        <td width="84%">BANYUSRI</td>
     </tr>
     <tr>
         <td>Kecamatan</td>
         <td>:</td>
-        <td>KARAWANG TIMUR</td>
+        <td>WONOSEGORO</td>
     </tr>
     <tr>
         <td>Kabupaten</td>
         <td>:</td>
-        <td>KARAWANG</td>
+        <td>BOYOLALI</td>
     </tr>
     <tr>
         <td>Provinsi</td>
         <td>:</td>
-        <td>JAWA BARAT</td>
+        <td>Jawa Tengah</td>
+    </tr>
+    <tr>
+        <td>Kode Desa</td>
+        <td>:</td>
+        <td>3309182005</td>
     </tr>
 </table>
 <br /><br />
@@ -45,8 +50,8 @@
 </center>
 <br /><br /><br />
 <font align="justify">
-    Yang bertandatangan di bawah ini , <?php echo $surat_kematian->jabatan_pejabat; ?> Desa Warungbambu Kecamatan
-    Karawang Timur Kabupaten Karawang, menerangkan bahwa pada:
+    Yang bertandatangan di bawah ini , <?php echo $surat_kematian->jabatan_pejabat; ?> Desa Banyusri Kecamatan
+    Wonosegoro Kabupaten Boyolali, menerangkan bahwa pada:
 </font>
 <table width="100%">
     <tr>
@@ -154,13 +159,13 @@ $pelapor = $this->db->query("SELECT * FROM penduduk WHERE nik='$surat_kematian->
     <tr>
         <td width="50%"></td>
         <td width="50%">
-            <center>Warungbambu, <?= date('d F Y', strtotime($surat_kematian->tanggal_surat_kematian)); ?></center>
+            <center>Banyusri, <?= date('d F Y', strtotime($surat_kematian->tanggal_surat_kematian)); ?></center>
         </td>
     </tr>
     <tr>
         <td></td>
         <td>
-            <center>Kepala Desa Warungbambu</center>
+            <center>Kepala Desa Banyusri</center>
         </td>
     </tr>
     <tr>

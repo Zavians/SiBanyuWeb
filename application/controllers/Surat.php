@@ -53,7 +53,7 @@ class Surat extends CI_Controller
 				$this->session->set_flashdata('sukses', 'Data berhasil ditambahkan.');
 				redirect(base_url('surat/pindah/'));
 			} else {
-				$data['title'] = "Surat Pindah - Desa Warung Bambu";
+				$data['title'] = "Surat Pindah - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pendudukk'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_surat_pindah->pejabat();
@@ -87,7 +87,7 @@ class Surat extends CI_Controller
 				$this->session->set_flashdata('sukses', 'Data berhasil diedit.');
 				redirect(base_url('surat/pindah/'));
 			} else {
-				$data['title'] = "Surat Pindah - Desa Warung Bambu";
+				$data['title'] = "Surat Pindah - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pendudukk'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_surat_pindah->pejabat();
@@ -104,7 +104,7 @@ class Surat extends CI_Controller
 			$this->session->set_flashdata('sukses', 'Data berhasil dihapus.');
 			redirect(base_url('surat/pindah'));
 		} else {
-			$data['title'] = "Surat Pindah - Desa Warung Bambu";
+			$data['title'] = "Surat Pindah - Desa Banyusri";
 			$data['surat'] = $this->m_surat_pindah->daftar_pindah();
 			$mutasi = $this->load->view('header', $data);
 			$this->load->view('surat/daftar_pindah');
@@ -125,7 +125,7 @@ class Surat extends CI_Controller
 				$this->session->set_flashdata('sukses', 'Data berhasil ditambahkan.');
 				redirect(base_url('surat/domisili/'));
 			} else {
-				$data['title'] = "Surat Keterangan Domisili - Desa Warung Bambu";
+				$data['title'] = "Surat Keterangan Domisili - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_domisili->pejabat();
 				$this->load->view('header', $data);
@@ -146,7 +146,7 @@ class Surat extends CI_Controller
 				$this->session->set_flashdata('sukses', 'Data berhasil diedit.');
 				redirect(base_url('surat/domisili/'));
 			} else {
-				$data['title'] = "Surat Keterangan Domisili - Desa Warung Bambu";
+				$data['title'] = "Surat Keterangan Domisili - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_domisili->pejabat();
 				$data['domisili'] = $this->m_domisili->edit_domisili($this->uri->segment('4'));
@@ -162,7 +162,7 @@ class Surat extends CI_Controller
 			$this->session->set_flashdata('sukses', 'Data berhasil dihapus.');
 			redirect(base_url('surat/domisili'));
 		} else {
-			$data['title'] = "Surat Keterangan Domisili - Desa Warung Bambu";
+			$data['title'] = "Surat Keterangan Domisili - Desa Banyusri";
 			$data['surat'] = $this->m_domisili->daftar_domisili();
 			$mutasi = $this->load->view('header', $data);
 			$this->load->view('surat/daftar_domisili');
@@ -183,7 +183,7 @@ class Surat extends CI_Controller
 				$this->session->set_flashdata('sukses', 'Data berhasil ditambahkan.');
 				redirect(base_url('surat/belum_menikah/'));
 			} else {
-				$data['title'] = "Surat Keterangan Belum Menikah - Desa Warung Bambu";
+				$data['title'] = "Surat Keterangan Belum Menikah - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_belum_menikah->pejabat();
 				$this->load->view('header', $data);
@@ -203,7 +203,7 @@ class Surat extends CI_Controller
 				$this->session->set_flashdata('sukses', 'Data berhasil diedit.');
 				redirect(base_url('surat/belum_menikah/'));
 			} else {
-				$data['title'] = "Surat Keterangan Belum Menikah - Desa Warung Bambu";
+				$data['title'] = "Surat Keterangan Belum Menikah - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_belum_menikah->pejabat();
 				$data['belum_menikah'] = $this->m_belum_menikah->edit_belum_menikah($this->uri->segment('4'));
@@ -219,7 +219,7 @@ class Surat extends CI_Controller
 			$this->session->set_flashdata('sukses', 'Data berhasil dihapus.');
 			redirect(base_url('surat/belum_menikah'));
 		} else {
-			$data['title'] = "Surat Keterangan Belum Menikah - Desa Warung Bambu";
+			$data['title'] = "Surat Keterangan Belum Menikah - Desa Banyusri";
 			$data['surat'] = $this->m_belum_menikah->daftar_belum_menikah();
 			$mutasi = $this->load->view('header', $data);
 			$this->load->view('surat/daftar_belum_menikah');
@@ -240,7 +240,7 @@ class Surat extends CI_Controller
 				$this->session->set_flashdata('sukses', 'Data berhasil ditambahkan.');
 				redirect(base_url('surat/belum_sekolah/'));
 			} else {
-				$data['title'] = "Surat Keterangan Belum Sekolah - Desa Warung Bambu";
+				$data['title'] = "Surat Keterangan Belum Sekolah - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_belum_sekolah->pejabat();
 				$this->load->view('header', $data);
@@ -260,7 +260,7 @@ class Surat extends CI_Controller
 				$this->session->set_flashdata('sukses', 'Data berhasil diedit.');
 				redirect(base_url('surat/belum_sekolah/'));
 			} else {
-				$data['title'] = "Surat Keterangan Belum Sekolah - Desa Warung Bambu";
+				$data['title'] = "Surat Keterangan Belum Sekolah - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_belum_sekolah->pejabat();
 				$data['belum_sekolah'] = $this->m_belum_sekolah->edit_belum_sekolah($this->uri->segment('4'));
@@ -276,7 +276,7 @@ class Surat extends CI_Controller
 			$this->session->set_flashdata('sukses', 'Data berhasil dihapus.');
 			redirect(base_url('surat/belum_sekolah'));
 		} else {
-			$data['title'] = "Surat Keterangan Belum Sekolah - Desa Warung Bambu";
+			$data['title'] = "Surat Keterangan Belum Sekolah - Desa Banyusri";
 			$data['surat'] = $this->m_belum_sekolah->daftar_belum_sekolah();
 			$mutasi = $this->load->view('header', $data);
 			$this->load->view('surat/daftar_belum_sekolah');
@@ -297,7 +297,7 @@ class Surat extends CI_Controller
 				$this->session->set_flashdata('sukses', 'Data berhasil ditambahkan.');
 				redirect(base_url('surat/menikah/'));
 			} else {
-				$data['title'] = "Surat Keterangan Menikah - Desa Warung Bambu";
+				$data['title'] = "Surat Keterangan Menikah - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_menikah->pejabat();
 				$this->load->view('header', $data);
@@ -317,7 +317,7 @@ class Surat extends CI_Controller
 				$this->session->set_flashdata('sukses', 'Data berhasil diedit.');
 				redirect(base_url('surat/menikah/'));
 			} else {
-				$data['title'] = "Surat Keterangan Menikah - Desa Warung Bambu";
+				$data['title'] = "Surat Keterangan Menikah - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_menikah->pejabat();
 				$data['menikah'] = $this->m_menikah->edit_menikah($this->uri->segment('4'));
@@ -333,7 +333,7 @@ class Surat extends CI_Controller
 			$this->session->set_flashdata('sukses', 'Data berhasil dihapus.');
 			redirect(base_url('surat/menikah'));
 		} else {
-			$data['title'] = "Surat Keterangan Menikah - Desa Warung Bambu";
+			$data['title'] = "Surat Keterangan Menikah - Desa Banyusri";
 			$data['surat'] = $this->m_menikah->daftar_menikah();
 			$mutasi = $this->load->view('header', $data);
 			$this->load->view('surat/daftar_menikah');
@@ -354,7 +354,7 @@ class Surat extends CI_Controller
 				$this->session->set_flashdata('sukses', 'Data berhasil ditambahkan.');
 				redirect(base_url('surat/cerai_mati/'));
 			} else {
-				$data['title'] = "Surat Keterangan Cerai Mati - Desa Warung Bambu";
+				$data['title'] = "Surat Keterangan Cerai Mati - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_cerai_mati->pejabat();
 				$this->load->view('header', $data);
@@ -374,7 +374,7 @@ class Surat extends CI_Controller
 				$this->session->set_flashdata('sukses', 'Data berhasil diedit.');
 				redirect(base_url('surat/cerai_mati/'));
 			} else {
-				$data['title'] = "Surat Keterangan Cerai Mati - Desa Warung Bambu";
+				$data['title'] = "Surat Keterangan Cerai Mati - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_cerai_mati->pejabat();
 				$data['cerai_mati'] = $this->m_cerai_mati->edit_cerai_mati($this->uri->segment('4'));
@@ -390,7 +390,7 @@ class Surat extends CI_Controller
 			$this->session->set_flashdata('sukses', 'Data berhasil dihapus.');
 			redirect(base_url('surat/cerai_mati'));
 		} else {
-			$data['title'] = "Surat Keterangan Cerai Mati - Desa Warung Bambu";
+			$data['title'] = "Surat Keterangan Cerai Mati - Desa Banyusri";
 			$data['surat'] = $this->m_cerai_mati->daftar_cerai_mati();
 			$mutasi = $this->load->view('header', $data);
 			$this->load->view('surat/daftar_cerai_mati');
@@ -411,7 +411,7 @@ class Surat extends CI_Controller
 				$this->session->set_flashdata('sukses', 'Data berhasil ditambahkan.');
 				redirect(base_url('surat/haji/'));
 			} else {
-				$data['title'] = "Surat Keterangan Cerai Mati - Desa Warung Bambu";
+				$data['title'] = "Surat Keterangan Cerai Mati - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_haji->pejabat();
 				$this->load->view('header', $data);
@@ -431,7 +431,7 @@ class Surat extends CI_Controller
 				$this->session->set_flashdata('sukses', 'Data berhasil diedit.');
 				redirect(base_url('surat/haji/'));
 			} else {
-				$data['title'] = "Surat Keterangan Cerai Mati - Desa Warung Bambu";
+				$data['title'] = "Surat Keterangan Cerai Mati - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_haji->pejabat();
 				$data['haji'] = $this->m_haji->edit_haji($this->uri->segment('4'));
@@ -447,7 +447,7 @@ class Surat extends CI_Controller
 			$this->session->set_flashdata('sukses', 'Data berhasil dihapus.');
 			redirect(base_url('surat/haji'));
 		} else {
-			$data['title'] = "Surat Keterangan Cerai Mati - Desa Warung Bambu";
+			$data['title'] = "Surat Keterangan Cerai Mati - Desa Banyusri";
 			$data['surat'] = $this->m_haji->daftar_haji();
 			$mutasi = $this->load->view('header', $data);
 			$this->load->view('surat/daftar_haji');
@@ -468,7 +468,7 @@ class Surat extends CI_Controller
 				$this->session->set_flashdata('sukses', 'Data berhasil ditambahkan.');
 				redirect(base_url('surat/skck/'));
 			} else {
-				$data['title'] = "Surat Keterangan SKCK - Desa Warung Bambu";
+				$data['title'] = "Surat Keterangan SKCK - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_skck->pejabat();
 				$this->load->view('header', $data);
@@ -488,7 +488,7 @@ class Surat extends CI_Controller
 				$this->session->set_flashdata('sukses', 'Data berhasil diedit.');
 				redirect(base_url('surat/skck/'));
 			} else {
-				$data['title'] = "Surat Keterangan SKCK - Desa Warung Bambu";
+				$data['title'] = "Surat Keterangan SKCK - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_skck->pejabat();
 				$data['skck'] = $this->m_skck->edit_skck($this->uri->segment('4'));
@@ -504,7 +504,7 @@ class Surat extends CI_Controller
 			$this->session->set_flashdata('sukses', 'Data berhasil dihapus.');
 			redirect(base_url('surat/skck'));
 		} else {
-			$data['title'] = "Surat Keterangan SKCK - Desa Warung Bambu";
+			$data['title'] = "Surat Keterangan SKCK - Desa Banyusri";
 			$data['surat'] = $this->m_skck->daftar_skck();
 			$mutasi = $this->load->view('header', $data);
 			$this->load->view('surat/daftar_skck');
@@ -527,7 +527,7 @@ class Surat extends CI_Controller
 				$this->session->set_flashdata('sukses', 'Data berhasil ditambahkan.');
 				redirect(base_url('surat/usaha/'));
 			} else {
-				$data['title'] = "Surat Keterangan Usaha - Desa Warung Bambu";
+				$data['title'] = "Surat Keterangan Usaha - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_usaha->pejabat();
 				$this->load->view('header', $data);
@@ -549,7 +549,7 @@ class Surat extends CI_Controller
 				$this->session->set_flashdata('sukses', 'Data berhasil diedit.');
 				redirect(base_url('surat/usaha/'));
 			} else {
-				$data['title'] = "Surat Keterangan Usaha - Desa Warung Bambu";
+				$data['title'] = "Surat Keterangan Usaha - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_usaha->pejabat();
 				$data['usaha'] = $this->m_usaha->edit_usaha($this->uri->segment('4'));
@@ -565,7 +565,7 @@ class Surat extends CI_Controller
 			$this->session->set_flashdata('sukses', 'Data berhasil dihapus.');
 			redirect(base_url('surat/usaha'));
 		} else {
-			$data['title'] = "Surat Keterangan Usaha - Desa Warung Bambu";
+			$data['title'] = "Surat Keterangan Usaha - Desa Banyusri";
 			$data['surat'] = $this->m_usaha->daftar_usaha();
 			$mutasi = $this->load->view('header', $data);
 			$this->load->view('surat/daftar_usaha');
@@ -587,7 +587,7 @@ class Surat extends CI_Controller
 				$this->session->set_flashdata('sukses', 'Data berhasil ditambahkan.');
 				redirect(base_url('surat/batal_pindah/'));
 			} else {
-				$data['title'] = "Surat Keterangan Batal Pindah - Desa Warung Bambu";
+				$data['title'] = "Surat Keterangan Batal Pindah - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_batal_pindah->pejabat();
 				$this->load->view('header', $data);
@@ -608,7 +608,7 @@ class Surat extends CI_Controller
 				$this->session->set_flashdata('sukses', 'Data berhasil diedit.');
 				redirect(base_url('surat/batal_pindah/'));
 			} else {
-				$data['title'] = "Surat Keterangan Batal Pindah - Desa Warung Bambu";
+				$data['title'] = "Surat Keterangan Batal Pindah - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_batal_pindah->pejabat();
 				$data['batal_pindah'] = $this->m_batal_pindah->edit_batal_pindah($this->uri->segment('4'));
@@ -624,7 +624,7 @@ class Surat extends CI_Controller
 			$this->session->set_flashdata('sukses', 'Data berhasil dihapus.');
 			redirect(base_url('surat/batal_pindah'));
 		} else {
-			$data['title'] = "Surat Keterangan Batal Pindah - Desa Warung Bambu";
+			$data['title'] = "Surat Keterangan Batal Pindah - Desa Banyusri";
 			$data['surat'] = $this->m_batal_pindah->daftar_batal_pindah();
 			$mutasi = $this->load->view('header', $data);
 			$this->load->view('surat/daftar_batal_pindah');
@@ -647,7 +647,7 @@ class Surat extends CI_Controller
 				$this->session->set_flashdata('sukses', 'Data berhasil ditambahkan.');
 				redirect(base_url('surat/penghasilan/'));
 			} else {
-				$data['title'] = "Surat Keterangan Penghasilan - Desa Warung Bambu";
+				$data['title'] = "Surat Keterangan Penghasilan - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_penghasilan->pejabat();
 				$this->load->view('header', $data);
@@ -669,7 +669,7 @@ class Surat extends CI_Controller
 				$this->session->set_flashdata('sukses', 'Data berhasil diedit.');
 				redirect(base_url('surat/penghasilan/'));
 			} else {
-				$data['title'] = "Surat Keterangan Penghasilan - Desa Warung Bambu";
+				$data['title'] = "Surat Keterangan Penghasilan - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_penghasilan->pejabat();
 				$data['penghasilan'] = $this->m_penghasilan->edit_penghasilan($this->uri->segment('4'));
@@ -685,7 +685,7 @@ class Surat extends CI_Controller
 			$this->session->set_flashdata('sukses', 'Data berhasil dihapus.');
 			redirect(base_url('surat/penghasilan'));
 		} else {
-			$data['title'] = "Surat Keterangan Penghasilan - Desa Warung Bambu";
+			$data['title'] = "Surat Keterangan Penghasilan - Desa Banyusri";
 			$data['surat'] = $this->m_penghasilan->daftar_penghasilan();
 			$mutasi = $this->load->view('header', $data);
 			$this->load->view('surat/daftar_penghasilan');
@@ -708,7 +708,7 @@ class Surat extends CI_Controller
 				$this->session->set_flashdata('sukses', 'Data berhasil ditambahkan.');
 				redirect(base_url('surat/izin_keluarga/'));
 			} else {
-				$data['title'] = "Surat Izin Keluarga - Desa Warung Bambu";
+				$data['title'] = "Surat Izin Keluarga - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pendudukk'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_izin_keluarga->pejabat();
@@ -731,7 +731,7 @@ class Surat extends CI_Controller
 				$this->session->set_flashdata('sukses', 'Data berhasil diedit.');
 				redirect(base_url('surat/izin_keluarga/'));
 			} else {
-				$data['title'] = "Surat Izin Keluarga - Desa Warung Bambu";
+				$data['title'] = "Surat Izin Keluarga - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pendudukk'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_izin_keluarga->pejabat();
@@ -748,7 +748,7 @@ class Surat extends CI_Controller
 			$this->session->set_flashdata('sukses', 'Data berhasil dihapus.');
 			redirect(base_url('surat/izin_keluarga'));
 		} else {
-			$data['title'] = "Surat Izin Keluarga - Desa Warung Bambu";
+			$data['title'] = "Surat Izin Keluarga - Desa Banyusri";
 			$data['surat'] = $this->m_izin_keluarga->daftar_izin_keluarga();
 			$mutasi = $this->load->view('header', $data);
 			$this->load->view('surat/daftar_izin_keluarga');
@@ -778,7 +778,7 @@ class Surat extends CI_Controller
 				$this->session->set_flashdata('sukses', 'Data berhasil ditambahkan.');
 				redirect(base_url('surat/surat_kelahiran/'));
 			} else {
-				$data['title'] = "Surat Kelahiran - Desa Warung Bambu";
+				$data['title'] = "Surat Kelahiran - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pendudukk'] = $this->m_penduduk->tampil();
 				$data['pendudukkk'] = $this->m_penduduk->tampil();
@@ -809,7 +809,7 @@ class Surat extends CI_Controller
 				$this->session->set_flashdata('sukses', 'Data berhasil diedit.');
 				redirect(base_url('surat/surat_kelahiran/'));
 			} else {
-				$data['title'] = "Surat Kelahiran - Desa Warung Bambu";
+				$data['title'] = "Surat Kelahiran - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pendudukk'] = $this->m_penduduk->tampil();
 				$data['pendudukkk'] = $this->m_penduduk->tampil();
@@ -827,7 +827,7 @@ class Surat extends CI_Controller
 			$this->session->set_flashdata('sukses', 'Data berhasil dihapus.');
 			redirect(base_url('surat/surat_kelahiran'));
 		} else {
-			$data['title'] = "Surat Kelahiran - Desa Warung Bambu";
+			$data['title'] = "Surat Kelahiran - Desa Banyusri";
 			$data['surat'] = $this->m_surat_kelahiran->daftar_surat_kelahiran();
 			$mutasi = $this->load->view('header', $data);
 			$this->load->view('surat/daftar_surat_kelahiran');
@@ -855,7 +855,7 @@ class Surat extends CI_Controller
 				$this->session->set_flashdata('sukses', 'Data berhasil ditambahkan.');
 				redirect(base_url('surat/surat_kematian/'));
 			} else {
-				$data['title'] = "Surat Kematian - Desa Warung Bambu";
+				$data['title'] = "Surat Kematian - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pendudukkk'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_surat_kematian->pejabat();
@@ -883,7 +883,7 @@ class Surat extends CI_Controller
 				$this->session->set_flashdata('sukses', 'Data berhasil diedit.');
 				redirect(base_url('surat/surat_kematian/'));
 			} else {
-				$data['title'] = "Surat Kematian - Desa Warung Bambu";
+				$data['title'] = "Surat Kematian - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pendudukkk'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_surat_kematian->pejabat();
@@ -900,7 +900,7 @@ class Surat extends CI_Controller
 			$this->session->set_flashdata('sukses', 'Data berhasil dihapus.');
 			redirect(base_url('surat/surat_kematian'));
 		} else {
-			$data['title'] = "Surat Kematian - Desa Warung Bambu";
+			$data['title'] = "Surat Kematian - Desa Banyusri";
 			$data['surat'] = $this->m_surat_kematian->daftar_surat_kematian();
 			$mutasi = $this->load->view('header', $data);
 			$this->load->view('surat/daftar_surat_kematian');
@@ -922,7 +922,7 @@ class Surat extends CI_Controller
 				$this->session->set_flashdata('sukses', 'Data berhasil ditambahkan.');
 				redirect(base_url('surat/sktm_pendidikan/'));
 			} else {
-				$data['title'] = "Surat Keterangan Tidak Mampu - Desa Warung Bambu";
+				$data['title'] = "Surat Keterangan Tidak Mampu - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pendudukk'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_sktm_pendidikan->pejabat();
@@ -944,7 +944,7 @@ class Surat extends CI_Controller
 				$this->session->set_flashdata('sukses', 'Data berhasil diedit.');
 				redirect(base_url('surat/sktm_pendidikan/'));
 			} else {
-				$data['title'] = "Surat Keterangan Tidak Mampu - Desa Warung Bambu";
+				$data['title'] = "Surat Keterangan Tidak Mampu - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pendudukk'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_sktm_pendidikan->pejabat();
@@ -961,7 +961,7 @@ class Surat extends CI_Controller
 			$this->session->set_flashdata('sukses', 'Data berhasil dihapus.');
 			redirect(base_url('surat/sktm_pendidikan'));
 		} else {
-			$data['title'] = "Surat Keterangan Tidak Mampu - Desa Warung Bambu";
+			$data['title'] = "Surat Keterangan Tidak Mampu - Desa Banyusri";
 			$data['surat'] = $this->m_sktm_pendidikan->daftar_sktm_pendidikan();
 			$mutasi = $this->load->view('header', $data);
 			$this->load->view('surat/daftar_sktm_pendidikan');
@@ -983,7 +983,7 @@ class Surat extends CI_Controller
 				$this->session->set_flashdata('sukses', 'Data berhasil ditambahkan.');
 				redirect(base_url('surat/sktm_kesehatan/'));
 			} else {
-				$data['title'] = "Surat Keterangan Kesehatan - Desa Warung Bambu";
+				$data['title'] = "Surat Keterangan Kesehatan - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pendudukk'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_sktm_kesehatan->pejabat();
@@ -1005,7 +1005,7 @@ class Surat extends CI_Controller
 				$this->session->set_flashdata('sukses', 'Data berhasil diedit.');
 				redirect(base_url('surat/sktm_kesehatan/'));
 			} else {
-				$data['title'] = "Surat Keterangan Kesehatan - Desa Warung Bambu";
+				$data['title'] = "Surat Keterangan Kesehatan - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pendudukk'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_sktm_kesehatan->pejabat();
@@ -1022,7 +1022,7 @@ class Surat extends CI_Controller
 			$this->session->set_flashdata('sukses', 'Data berhasil dihapus.');
 			redirect(base_url('surat/sktm_kesehatan'));
 		} else {
-			$data['title'] = "Surat Keterangan Kesehatan - Desa Warung Bambu";
+			$data['title'] = "Surat Keterangan Kesehatan - Desa Banyusri";
 			$data['surat'] = $this->m_sktm_kesehatan->daftar_sktm_kesehatan();
 			$mutasi = $this->load->view('header', $data);
 			$this->load->view('surat/daftar_sktm_kesehatan');
@@ -1047,7 +1047,7 @@ class Surat extends CI_Controller
 				$this->session->set_flashdata('sukses', 'Data berhasil ditambahkan.');
 				redirect(base_url('surat/pemakaman/'));
 			} else {
-				$data['title'] = "Surat Keterangan Pemakaman - Desa Warung Bambu";
+				$data['title'] = "Surat Keterangan Pemakaman - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_pemakaman->pejabat();
 				$this->load->view('header', $data);
@@ -1071,7 +1071,7 @@ class Surat extends CI_Controller
 				$this->session->set_flashdata('sukses', 'Data berhasil diedit.');
 				redirect(base_url('surat/pemakaman/'));
 			} else {
-				$data['title'] = "Surat Keterangan Pemakaman - Desa Warung Bambu";
+				$data['title'] = "Surat Keterangan Pemakaman - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_pemakaman->pejabat();
 				$data['pemakaman'] = $this->m_pemakaman->edit_pemakaman($this->uri->segment('4'));
@@ -1087,7 +1087,7 @@ class Surat extends CI_Controller
 			$this->session->set_flashdata('sukses', 'Data berhasil dihapus.');
 			redirect(base_url('surat/pemakaman'));
 		} else {
-			$data['title'] = "Surat Keterangan Pemakaman - Desa Warung Bambu";
+			$data['title'] = "Surat Keterangan Pemakaman - Desa Banyusri";
 			$data['surat'] = $this->m_pemakaman->daftar_pemakaman();
 			$mutasi = $this->load->view('header', $data);
 			$this->load->view('surat/daftar_pemakaman');

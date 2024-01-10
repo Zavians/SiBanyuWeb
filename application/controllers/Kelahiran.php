@@ -14,7 +14,7 @@ class Kelahiran extends CI_Controller
 
 	public function tampil()
 	{
-		$data['title'] = "Data kelahiran - Desa Warung Bambu";
+		$data['title'] = "Data kelahiran - Desa Banyusri";
 		$data['kelahiran'] = $this->m_kelahiran->tampil();
 
 		$this->load->view('header', $data);
@@ -23,7 +23,7 @@ class Kelahiran extends CI_Controller
 	}
 	public function tampil_kelahiran()
 	{
-		$data['title'] = "Data kelahiran - Desa Warung Bambu";
+		$data['title'] = "Data kelahiran - Desa Banyusri";
 		$data['kelahiran'] = $this->m_kelahiran->tampil();
 
 		$this->load->view('header', $data);
@@ -33,7 +33,7 @@ class Kelahiran extends CI_Controller
 
 	public function tambah()
 	{
-		$data['title'] = "Tambah kelahiran - Desa Warung Bambu";
+		$data['title'] = "Tambah kelahiran - Desa Banyusri";
 
 		$this->load->view('header', $data);
 		$this->load->view('kelahiran/tambah_kelahiran');
@@ -80,7 +80,7 @@ class Kelahiran extends CI_Controller
 
 	public function edit($id_kelahiran)
 	{
-		$data['title'] = "Edit kelahiran - Desa Warung Bambu";
+		$data['title'] = "Edit kelahiran - Desa Banyusri";
 		$data['kelahiran'] = $this->m_kelahiran->edit($this->uri->segment(3));
 
 		$this->load->view('header', $data);
@@ -123,7 +123,7 @@ class Kelahiran extends CI_Controller
 
 	public function detail($id_kelahiran)
 	{
-		$data['title'] = "Detail kelahiran - Desa Warung Bambu";
+		$data['title'] = "Detail kelahiran - Desa Banyusri";
 		$this->load->model('m_kelahiran');
 		$detail = $this->m_kelahiran->detail($id_kelahiran);
 		$data['detail'] = $detail;

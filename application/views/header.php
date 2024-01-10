@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title><?php echo $title; ?></title>
-    <link rel="shortcut icon" href="<?php echo base_url('assets/images/favicon.png'); ?>">
+    <link rel="shortcut icon" href="<?php echo base_url('assets/images/boyolali.png'); ?>">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- CSS -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bootstrap/css/bootstrap.css">
@@ -31,8 +31,8 @@
         <header class="main-header">
             <a href="<?php echo base_url('beranda'); ?>" class="logo">
                 <span class="logo-mini"><b>S</b></span>
-                <span class="logo-lg"><img src="<?php echo base_url('assets/images/logo-karawang.png'); ?>" width="27"
-                        alt="SIMPENDUK"><b>SIMPENDUK</b></span>
+                <span class="logo-lg"><img src="<?php echo base_url('assets/images/boyolali.png'); ?>" width="27"
+                        alt="SIMPENDUK"><b>SiBanyu</b></span>
             </a>
             <nav class="navbar navbar-static-top">
                 <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">

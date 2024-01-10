@@ -16,15 +16,22 @@
     size: portrait;
 }
 </style>
-<img src="<?php echo base_url('assets/images/kop-surat.png'); ?>" width="100%" height="15%">
-<br /><br /><br />
+<img src="<?php echo base_url('assets/images/KopBoyo.png'); ?>" width="100%" height="15%">
+<table width="100%">
+<tr>
+        <td width="15%">Kode Desa</td>
+        <td width="1%">:</td>
+        <td width="84%">3309182005</td>
+    </tr>
+</table>
+<br /><br />
 <center>
     <font size="5"><u><b>SURAT KETERANGAN</b></u></font><br />Nomor:
     145/<?php echo $domisili->id_domisili; ?>/IV/DS/<?php echo substr($domisili->tanggal_domisili, 0, 4); ?>
 </center>
 <br /><br /><br />
 <font align="justify">
-    Yang bertandatangan di bawah ini , Kepala Desa Warungbambu Kecamatan Karawang Timur Kabupaten Karawang menerangkan :
+    Yang bertandatangan di bawah ini , Kepala Desa Banyusri Kecamatan Wonosegoro Kabupaten Boyolali menerangkan :
 </font>
 <table width="100%">
     <tr>
@@ -76,7 +83,7 @@
     <tr>
         <td width="50%"></td>
         <td width="50%">
-            <center>Warungbambu, <?= date('d F Y', strtotime($domisili->tanggal_domisili)); ?> </center>
+            <center>Banyusri, <?= date('d F Y', strtotime($domisili->tanggal_domisili)); ?> </center>
         </td>
     </tr>
     <tr>
@@ -84,7 +91,7 @@
             <center>Yang Bersangkutan</center>
         </td>
         <td>
-            <center>Kepala Desa Warungbambu</center>
+            <center>Kepala Desa Banyusri</center>
         </td>
     </tr>
     <tr>

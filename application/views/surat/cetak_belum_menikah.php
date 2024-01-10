@@ -16,16 +16,23 @@
     size: portrait;
 }
 </style>
-<img src="<?php echo base_url('assets/images/kop-surat.png'); ?>" width="100%">
-<br /><br /><br />
+<img src="<?php echo base_url('assets/images/KopBoyo.png'); ?>" width="100%">
+<table width="100%">
+<tr>
+        <td width="15%">Kode Desa</td>
+        <td width="1%">:</td>
+        <td width="84%">3309182005</td>
+    </tr>
+</table>
+<br /><br />
 <center>
     <font size="5"><u><b>SURAT KETERANGAN DESA</b></u></font><br />Nomor:
     145/<?php echo $belum_menikah->id_belum_menikah; ?>/DS/<?php echo substr($belum_menikah->tanggal_belum_menikah, 0, 4); ?>
 </center>
 <br /><br /><br />
 <font align="justify">
-    Yang bertanda tangan dibawah ini , Kepala Desa Warungbambu Kecamatan Karawang Timur Kabupaten Karawang Provinsi Jawa
-    Barat
+    Yang bertanda tangan dibawah ini , Kepala Desa Banyusri Kecamatan Wonosegoro Kabupaten Boyolali Provinsi Jawa
+    Tengah
 </font>
 <table width="100%">
     <tr>
@@ -71,7 +78,7 @@
     <tr>
         <td width="50%"></td>
         <td width="50%">
-            <center>Warungbambu, <?= date('d F Y', strtotime($belum_menikah->tanggal_belum_menikah)); ?></center>
+            <center>Banyusri, <?= date('d F Y', strtotime($belum_menikah->tanggal_belum_menikah)); ?></center>
         </td>
     </tr>
     <tr>
@@ -79,13 +86,13 @@
             <center>Yang Bersangkutan</center>
         </td>
         <td>
-            <center>Kepala Desa Warungbambu</center>
+            <center>Kepala Desa Banyusri</center>
         </td>
     </tr>
     <tr>
         <td></td>
         <td>
-            <center>Kecamatan Karawang Timur</center>
+            <center>Kecamatan Wonosegoro</center>
         </td>
     </tr>
     <tr>

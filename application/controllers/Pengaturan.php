@@ -12,7 +12,7 @@ class Pengaturan extends CI_Controller
 
 	public function index()
 	{
-		$data['title'] = "Pengaturan - Desa Warung Bambu";
+		$data['title'] = "Pengaturan - Desa Banyusri";
 		$data['pengaturan'] = $this->m_pengaturan->tampil();
 
 		$mutasi = $this->load->view('header', $data);
@@ -22,7 +22,7 @@ class Pengaturan extends CI_Controller
 
 	public function edit()
 	{
-		$data['title'] = "Edit Pengaturan - Desa Warung Bambu";
+		$data['title'] = "Edit Pengaturan - Desa Banyusri";
 		$data['pengaturan'] = $this->m_pengaturan->edit($this->uri->segment(3));
 
 		$this->load->view('header', $data);

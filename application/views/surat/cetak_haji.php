@@ -16,16 +16,23 @@
     size: portrait;
 }
 </style>
-<img src="<?php echo base_url('assets/images/kop-surat.png'); ?>" width="100%">
-<br /><br /><br />
+<img src="<?php echo base_url('assets/images/KopBoyo.png'); ?>" width="100%">
+<table width="100%">
+<tr>
+        <td width="15%">Kode Desa</td>
+        <td width="1%">:</td>
+        <td width="84%">3309182005</td>
+    </tr>
+</table>
+<br /><br />
 <center>
     <font size="5"><u><b>SURAT KETERANGAN</b></u></font><br />Nomor:
     145/<?php echo $haji->id_haji; ?>/DS/<?php echo substr($haji->tanggal_haji, 0, 4); ?>
 </center>
 <br /><br /><br />
 <font align="justify">
-    Yang bertandatangan di bawah ini , <?php echo $haji->jabatan_pejabat; ?> Desa Warungbambu Kecamatan Karawang Timur
-    Kabupaten Karawang Provinsi Jawa Barat menerangkan bahwa:
+    Yang bertandatangan di bawah ini , <?php echo $haji->jabatan_pejabat; ?> Desa Banyusri Kecamatan Wonosegoro
+    Kabupaten Boyolali Provinsi Jawa Tengah menerangkan bahwa:
 </font>
 <table width="100%">
     <tr>
@@ -66,7 +73,7 @@
 </table>
 <br />
 <font align="justify">
-    Nama tersebut diatas benar Warga Desa Warungbambu Kecamatan Karawang Timur Kabupaten Karawang Provinsi Jawa Barat .
+    Nama tersebut diatas benar Warga Desa Banyusri Kecamatan Wonosegoro Kabupaten Boyolali Provinsi Jawa Tengah .
     menerangkan bahwa nama tersebut diatas mendaftarkan <b><i>IBADAH HAJI</i></b> <br /><br />
     Demikian Surat Keterangan ini dibuat dengan sebenarnya, untuk dapat dipergunakan sesuai keperluannya serta agar yang
     berkepentingan menjadi maklum.<br /><br /><br />
@@ -75,13 +82,13 @@
     <tr>
         <td width="50%"></td>
         <td width="50%">
-            <center>Warungbambu, <?= date('d F Y', strtotime($haji->tanggal_haji)); ?></center>
+            <center>Banyusri, <?= date('d F Y', strtotime($haji->tanggal_haji)); ?></center>
         </td>
     </tr>
     <tr>
         <td></td>
         <td>
-            <center>Kepala Desa Warungbambu</center>
+            <center>Kepala Desa Banyusri</center>
         </td>
     </tr>
     <tr>

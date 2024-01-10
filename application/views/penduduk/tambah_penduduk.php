@@ -92,8 +92,8 @@
                                             </option>
                                             <option value="Kepala Dusun WarnaJaya">Kepala Dusun WarnaJaya
                                             </option>
-                                            <option value="Perumahan Bumi Karawang Permai">Perumahan Bumi
-                                                Karawang
+                                            <option value="Perumahan Bumi Boyolali Permai">Perumahan Bumi
+                                                Boyolali
                                                 Permai</option>
                                             <option value=">Perumahan Gading Elok 2">Perumahan Gading Elok 2
                                             </option>

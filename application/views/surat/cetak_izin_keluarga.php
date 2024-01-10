@@ -16,8 +16,15 @@
     size: portrait;
 }
 </style>
-<img src="<?php echo base_url('assets/images/kop-surat.png'); ?>" width="100%">
-<br /><br /><br />
+<img src="<?php echo base_url('assets/images/KopBoyo.png'); ?>" width="100%">
+<table width="100%">
+<tr>
+        <td width="15%">Kode Desa</td>
+        <td width="1%">:</td>
+        <td width="84%">3309182005</td>
+    </tr>
+</table>
+<br /><br />
 <center>
     <font size="5"><u><b>SURAT IJIN KELUARGA</b></u></font>
 </center>
@@ -92,7 +99,7 @@ $anak = $this->db->query("SELECT * FROM penduduk WHERE nik='$izin_keluarga->nik_
     <tr>
         <td width="50%"></td>
         <td width="50%">
-            <center>Warungbambu, <?= date('d F Y', strtotime($izin_keluarga->tanggal_izin_keluarga)); ?></center>
+            <center>Banyusri, <?= date('d F Y', strtotime($izin_keluarga->tanggal_izin_keluarga)); ?></center>
         </td>
     </tr>
     <tr>

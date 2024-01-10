@@ -15,7 +15,7 @@ class Kematian extends CI_Controller
 
 	public function tampil()
 	{
-		$data['title'] = "Data Kematian - Desa Warung Bambu";
+		$data['title'] = "Data Kematian - Desa Banyusri";
 		$data['kematian'] = $this->m_kematian->tampil();
 
 		$this->load->view('header', $data);
@@ -24,7 +24,7 @@ class Kematian extends CI_Controller
 	}
 	public function tampil_kematian()
 	{
-		$data['title'] = "Data Kematian - Desa Warung Bambu";
+		$data['title'] = "Data Kematian - Desa Banyusri";
 		$data['kematian'] = $this->m_kematian->tampil();
 
 		$this->load->view('header', $data);
@@ -33,7 +33,7 @@ class Kematian extends CI_Controller
 	}
 	public function tambah()
 	{
-		$data['title'] = "Tambah Kematian - Desa Warung Bambu";
+		$data['title'] = "Tambah Kematian - Desa Banyusri";
 
 		$this->load->view('header', $data);
 		$this->load->view('kematian/tambah_kematian');
@@ -83,7 +83,7 @@ class Kematian extends CI_Controller
 
 	public function edit($id_kematian)
 	{
-		$data['title'] = "Edit kematian - Desa Warung Bambu";
+		$data['title'] = "Edit kematian - Desa Banyusri";
 		$data['kematian'] = $this->m_kematian->edit($id_kematian);
 
 		$this->load->view('header', $data);
