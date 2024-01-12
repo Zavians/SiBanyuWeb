@@ -39,7 +39,7 @@
                             <th style="text-align:center">Tanggal Lahir</th>
                             <th style="text-align:center">Jenis Kelamin</th>
                             <th style="text-align:center">Pendidikan</th>
-                            <th style="text-align:center">Status Tinggal</th>
+                            <th style="text-align:center">SHDK</th>
                             <th style="text-align:center">Aksi</th>
                         </tr>
                         </tr>

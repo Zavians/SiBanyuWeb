@@ -85,17 +85,14 @@
                                         <label>RW</label>
                                         <select name="rw" class="form-control" required>
                                             <option value="" selected disabled>- pilih -</option>
-                                            <option value="Kepala Dusun Krajan 1">Kepala Dusun Krajan 1</option>
-                                            <option value="Kepala Dusun Krajan 2">Kepala Dusun Krajan 2</option>
-                                            <option value="Kepala Dusun Sukamaju">Kepala Dusun Sukamaju</option>
-                                            <option value="Kepala Dusun Sukamulya">Kepala Dusun Sukamulya
+                                            <option value="001">001</option>
+                                            <option value="002">002</option>
+                                            <option value="003">003</option>
+                                            <option value="004">004
                                             </option>
-                                            <option value="Kepala Dusun WarnaJaya">Kepala Dusun WarnaJaya
+                                            <option value="005">005
                                             </option>
-                                            <option value="Perumahan Bumi Boyolali Permai">Perumahan Bumi
-                                                Boyolali
-                                                Permai</option>
-                                            <option value=">Perumahan Gading Elok 2">Perumahan Gading Elok 2
+                                            <option value="006">006</option>
                                             </option>
                                         </select>
                                     </div>
@@ -116,40 +113,23 @@
                                         <input type="text" name="pekerjaan" class="form-control" required />
                                     </div>
                                     <div class="form-group">
-                                        <div class="form-group">
                                             <label>Pendidikan</label>
-                                            <select name="pendidikan" class="form-control" required>
-                                                <option value="" selected disabled>- pilih -</option>
-                                                <option value="Tidak Sekolah">Tidak Sekolah</option>
-                                                <option value="Tidak Tamat SD">Tidak Tamat SD</option>
-                                                <option value="SD">SD</option>
-                                                <option value="SMP">SMP</option>
-                                                <option value="SMA">SMA</option>
-                                                <option value="D1">D1</option>
-                                                <option value="D2">D2</option>
-                                                <option value="D3">D3</option>
-                                                <option value="S1">S1</option>
-                                                <option value="S2">S2</option>
-                                                <option value="S3">S3</option>
-                                        </div>
-                                        </select>
+                                            <input type="text" name="pendidikan" class="form-control" required />
                                     </div>
                                     <div class="form-group">
                                         <label>Status Perkawinan</label>
                                         <select name="status_perkawinan" class="form-control" required>
                                             <option value="" selected disabled>- pilih -</option>
-                                            <option value="Menikah">Menikah</option>
-                                            <option value="Belum Menikah">Belum Menikah</option>
+                                            <option value="Menikah">KAWIN</option>
+                                            <option value="Belum Menikah">BELUM KAWIN</option>
+                                            <option value="Cerai Mati ">CERAI MATI</option>
+                                            <option value="Cerai Hidup">CERAI HIDUP</option>
                                         </select>
                                     </div>
 
                                     <div class="form-group">
                                         <label>Status Tinggal</label>
-                                        <select name="status" class="form-control" required>
-                                            <option value="" selected disabled>- pilih -</option>
-                                            <option value="Tetap">Tetap</option>
-                                            <option value="Kontrak">Kontrak</option>
-                                        </select>
+                                        <input type="text" name="status" class="form-control" required />
                                     </div>
 
 

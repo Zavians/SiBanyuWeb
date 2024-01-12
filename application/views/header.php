@@ -31,8 +31,8 @@
         <header class="main-header">
             <a href="<?php echo base_url('beranda'); ?>" class="logo">
                 <span class="logo-mini"><b>S</b></span>
-                <span class="logo-lg"><img src="<?php echo base_url('assets/images/boyolali.png'); ?>" width="27"
-                        alt="SIMPENDUK"><b>SiBanyu</b></span>
+                <span class="logo-lg"><img src="<?php echo base_url('assets/images/BanyuLengkap.png'); ?>" width="27"
+                        alt="SIMPENDUK"><b>  SiBanyu</b></span>
             </a>
             <nav class="navbar navbar-static-top">
                 <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">

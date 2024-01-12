@@ -73,7 +73,7 @@ if ($this->session->flashdata('sukses')) {
         <td><?php echo $detail->status_perkawinan; ?></td>
       </tr>
       <tr>
-        <th> Status Tinggal </th>
+        <th> SHDK </th>
         <td><?php echo $detail->status; ?></td>
       </tr>
       <tr>

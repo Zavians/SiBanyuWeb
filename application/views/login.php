@@ -89,7 +89,7 @@
 
   <div class="right-side">
     <form class="login-form" action="<?php echo base_url('login/auth'); ?>" method="post" class="" role="form">
-      <img src="<?php echo base_url(); ?>/assets/images/logo-Boyolali.png" alt="Logo" />
+      <img src="<?php echo base_url(); ?>/assets/images/Boyoy.png" alt="Logo" />
       <span class="login100-form-title p-b-26">
         SISTEM PENGELOLAAN DATA PENDUDUK <br> DESA BANYUSRI
       </span>

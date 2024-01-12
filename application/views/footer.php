@@ -2,8 +2,8 @@
         <div class="pull-right hidden-xs">
             <!-- Version disini -->
         </div>
-        <img src="<?php echo base_url('assets/images/am-dev.png'); ?>" width="23">
-        Copyright © <?php echo date('Y'); ?> AM-Development
+        <img src="<?php echo base_url('assets/images/Banyu.png'); ?>" width="23">
+        Copyright © <?php echo date('Y'); ?> Kenza Vianda
         <!-- Copyright disini -->
     </footer>
 </div>

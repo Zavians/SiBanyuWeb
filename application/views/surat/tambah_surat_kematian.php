@@ -63,7 +63,7 @@
                                             <input type="number" name="umur" class="form-control"
                                                 placeholder="Umur Pelapor" required />
                                         </div>
-                                        <label>Tempat Tanggal Lahir</label>
+                                        <label>Tempat Tanggal Kematian</label>
                                         <div class="row">
                                             <div class="col-xs-3">
                                                 <input type="text" name="tempat" class="form-control"
