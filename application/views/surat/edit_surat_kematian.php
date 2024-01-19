@@ -75,6 +75,28 @@
                                             </select>
                                         </div>
                                         <div class="form-group">
+                                            <label>NIK Korban</label>
+                                            <select name="korban" class="form-control" id="nik2" required>
+                                                <?php
+                                                foreach ($penduduks as $penduduks) :
+                                                    if ($penduduks->nik == $surat_kematian->nik_pelapor) {
+                                                        ?>
+                                                <option value="<?php echo $penduduks->nik; ?>" selected>
+                                                    <?php echo $penduduks->nik; ?> - <?php echo $penduduks->nama; ?>
+                                                </option>
+                                                <?php
+                                                        } else {
+                                                            ?>
+                                                <option value="<?php echo $penduduks->nik; ?>">
+                                                    <?php echo $penduduks->nik; ?> - <?php echo $penduduks->nama; ?>
+                                                </option>
+                                                <?php
+                                                    }
+                                                endforeach;
+                                                ?>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
                                             <label>Umur Pelapor</label>
                                             <input type="number" name="umur" class="form-control"
                                                 placeholder="Umur Pelapor" required
@@ -150,6 +172,21 @@
                                                 placeholder="Hubungan Sebagai" required
                                                 value="<?php echo $surat_kematian->hubungan_sebagai; ?>" />
                                         </div>
+
+                                        <div class="form-group">
+                                            <label>Tempat Meninggal</label>
+                                            <input type="text" name="tempat" class="form-control"
+                                                placeholder="Tempat Meninggal" required
+                                                value="<?php echo $surat_kematian->tempat_meninggal; ?>" />
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Alasan Meninggal</label>
+                                            <input type="text" name="alasan" class="form-control"
+                                                placeholder="Alasan Meninggal" required
+                                                value="<?php echo $surat_kematian->alasan_meninggal; ?>" />
+                                        </div>
+
                                         <div class="form-group">
                                             <label>Tanda Tangan</label>
                                             <select name="pejabat" class="form-control" required>
