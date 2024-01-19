@@ -28,6 +28,8 @@
                         <!-- kolom ke-1 -->
                         <div class="col-lg-6">
                             <h3>DATA DAERAH ASAL</h3>
+
+                            
                             <div class="form-group">
                                 <label>Nomor Induk Kependudukan</label>
                                 <input type="text" name="nik" class="form-control" required />
@@ -68,14 +70,15 @@
                                 <label>RW</label>
                                 <select name="rw" class="form-control" required>
                                     <option value="" selected disabled>- pilih -</option>
-                                    <option value="Kepala Dusun Krajan 1">Kepala Dusun Krajan 1</option>
-                                    <option value="Kepala Dusun Krajan 2">Kepala Dusun Krajan 2</option>
-                                    <option value="Kepala Dusun Sukamaju">Kepala Dusun Sukamaju</option>
-                                    <option value="Kepala Dusun Sukamulya">Kepala Dusun Sukamulya</option>
-                                    <option value="Kepala Dusun WarnaJaya">Kepala Dusun WarnaJaya</option>
-                                    <option value="Perumahan Bumi Boyolali Permai">Perumahan Bumi Boyolali Permai
-                                    </option>
-                                    <option value=">Perumahan Gading Elok 2">Perumahan Gading Elok 2</option>
+                                    <option value="001">001</option>
+											<option value="002">002</option>
+											<option value="003">003</option>
+											<option value="004">004
+											</option>
+											<option value="005">005
+											</option>
+											<option value="006">006</option>
+											</option>
                                 </select>
                             </div>
                         </div>
@@ -87,16 +90,9 @@
 
                             <div class="form-group">
                                 <label>Alasan Pindah</label>
-                                <select name="alasan_pindah" class="form-control" required>
-                                    <option value="" selected disabled>- pilih -</option>
-                                    <option value="Pekerjaan">Pekerjaan</option>
-                                    <option value="Keamanan">Keamanan</option>
-                                    <option value="Kesehatan">Kesehatan</option>
-                                    <option value="Perumahan">Perumahan</option>
-                                    <option value="Keluarga">Keluarga</option>
-                                    <option value="Lainnya">Lainnya</option>
-                                </select>
+                                <input name="alasan_pindah" class="form-control" required />
                             </div>
+
                             <div class="form-group">
                                 <label>Tanggal Pindah</label>
                                 <div class="row">
@@ -117,15 +113,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Jenis Kepindahan</label>
-                                <select name="jenis_pindah" class="form-control" required>
-                                    <option value="" selected disabled>- pilih -</option>
-                                    <option value="Kepala Keluarga">Kepala Keluarga</option>
-                                    <option value="Kepala Keluarga dan Seluruh Anggota Keluarga">Kepala Keluarga dan
-                                        Seluruh Anggota Keluarga</option>
-                                    <option value="Kepala Keluarga dan Sebagian Keluarga lainnya">Kepala Keluarga dan
-                                        Sebagian Keluarga lainnya</option>
-                                    <option value="Anggota Keluarga">Anggota Keluarga</option>
-                                </select>
+                                <input name="jenis_pindah" class="form-control" required />
                             </div>
 
                             <div class="form-group">

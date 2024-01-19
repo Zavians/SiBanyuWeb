@@ -38,7 +38,7 @@ if ($this->session->flashdata('sukses')) {
         </div>
         <div class="form-group">
           <button class="btn btn-success">Simpan</button>
-          <a href="<?php echo base_url('pengaturan/tampil'); ?>" class="btn btn-danger">Batal</a>
+          <a onclick="history.back()" class="btn btn-danger">Batal</a>
         </div>
       </form>
     </div>

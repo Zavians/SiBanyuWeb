@@ -46,10 +46,13 @@
                                     <option value="<?php echo isset($pindah->agama) ? $pindah->agama : ''; ?>" selected>
                                         <?php echo isset($pindah->agama) ? $pindah->agama : 'Pilih Agama'; ?>
                                     </option>
+                                    <option value="" disabled>--Ubah--</option>
                                     <option value="Islam">Islam</option>
                                     <option value="Kristen">Kristen</option>
-                                    <option value="Budha">Budha</option>
+                                    <option value="Katholik">Katholik</option>
                                     <option value="Hindu">Hindu</option>
+                                    <option value="Budha">Budha</option>
+                                    <option value="Konghucu">Konghucu</option>
                                 </select>
                             </div>
 
@@ -75,13 +78,16 @@
                                 <select name="rw" class="form-control" required>
                                     <option value="<?php echo $pindah->rw; ?>" selected>
                                         <?php echo $pindah->rw; ?></option>
-                                        <option value="Kepala Dusun Krajan 1">Kepala Dusun Krajan 1</option>
-                                        <option value="Kepala Dusun Krajan 2">Kepala Dusun Krajan 2</option>
-                                        <option value="Kepala Dusun Sukamaju">Kepala Dusun Sukamaju</option>
-                                        <option value="Kepala Dusun Sukamulya">Kepala Dusun Sukamulya</option>
-                                        <option value="Kepala Dusun WarnaJaya">Kepala Dusun WarnaJaya</option>
-                                        <option value="Perumahan Bumi Boyolali Permai">Perumahan Bumi Boyolali Permai
-                                        </option>
+                                        <option value="" disabled>--Ubah--</option>
+                                        <option value="001">001</option>
+											<option value="002">002</option>
+											<option value="003">003</option>
+											<option value="004">004
+											</option>
+											<option value="005">005
+											</option>
+											<option value="006">006</option>
+											</option>
                                     </select>
                                 </div>
 
@@ -94,16 +100,7 @@
 
                                 <div class="form-group">
                                     <label>Alasan Pindah</label>
-                                    <select name="alasan_pindah" class="form-control" required>
-                                        <option value="<?php echo $pindah->alasan_pindah; ?>" selected>
-                                            <?php echo $pindah->alasan_pindah; ?></option>
-                                            <option value="Pekerjaan">Pekerjaan</option>
-                                            <option value="Keamanan">Keamanan</option>
-                                            <option value="Kesehatan">Kesehatan</option>
-                                            <option value="Perumahan">Perumahan</option>
-                                            <option value="Keluarga">Keluarga</option>
-                                            <option value="Lainnya">Lainnya</option>
-                                        </select>
+                                    <input class="form-control" name="alasan_pindah" value="<?php echo $pindah->alasan_pindah; ?>" />
                                     </div>
                                     <div class="form-group">
                                         <label>Tanggal Pindah</label>
@@ -127,16 +124,9 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Jenis Kepindahan</label>
-                                        <select name="jenis_pindah" class="form-control" required>
-                                            <option value="<?php echo $pindah->jenis_pindah; ?>" selected>
-                                                <?php echo $pindah->jenis_pindah; ?></option>
-                                                <option value="Kepala Keluarga">Kepala Keluarga</option>
-                                                <option value="Kepala Keluarga dan Seluruh Anggota Keluarga">Kepala Keluarga dan
-                                                Seluruh Anggota Keluarga</option>
-                                                <option value="Kepala Keluarga dan Sebagian Keluarga lainnya">Kepala Keluarga dan
-                                                Sebagian Keluarga lainnya</option>
-                                                <option value="Anggota Keluarga">Anggota Keluarga</option>
-                                            </select>
+        
+                                        <input name="jenis_pindah" class="form-control" value="<?php echo $pindah->jenis_pindah; ?>" required />
+        
                                         </div>
 
                                         <div class="form-group">
@@ -144,6 +134,7 @@
                                             <select name="klasifikasi_pindah" class="form-control" required>
                                                 <option value="<?php echo $pindah->klasifikasi_pindah; ?>" selected>
                                                     <?php echo $pindah->klasifikasi_pindah; ?></option>
+                                                    <option value="" disabled>--Ubah--</option>
                                                     <option value="Dalam satu Desa">Dalam satu Desa</option>
                                                     <option value="Antar Desa">Antar Desa</option>
                                                     <option value="Antar Kecamatan">Antar Kecamatan</option>

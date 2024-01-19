@@ -97,6 +97,28 @@
                                             </select>
                                         </div>
                                         <div class="form-group">
+                                            <label>NIK Penolong</label>
+                                            <select name="penolong" class="form-control" id="nama" required>
+                                                <?php
+                                                foreach ($pendudukkkk as $pendudukkkk) :
+                                                    if ($pendudukkkk->nik == $surat_kelahiran->nik_pelapor) {
+                                                        ?>
+                                                <option value="<?php echo $pendudukkkk->nik; ?>" selected>
+                                                    <?php echo $pendudukkkk->nik; ?> - <?php echo $pendudukkkk->nama; ?>
+                                                </option>
+                                                <?php
+                                                        } else {
+                                                            ?>
+                                                <option value="<?php echo $pendudukkkk->nik; ?>">
+                                                    <?php echo $pendudukkkk->nik; ?> - <?php echo $pendudukkkk->nama; ?>
+                                                </option>
+                                                <?php
+                                                    }
+                                                endforeach;
+                                                ?>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
                                             <label>Nama Anak</label>
                                             <input type="text" name="nama" class="form-control" placeholder="Nama Anak"
                                                 required value="<?php echo $surat_kelahiran->nama_anak; ?>" />

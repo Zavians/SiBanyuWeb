@@ -764,6 +764,7 @@ class Surat extends CI_Controller
 					'nik_ayah' => $this->input->post('ayah'),
 					'nik_ibu' => $this->input->post('ibu'),
 					'nik_pelapor' => $this->input->post('pelapor'),
+					'nik_penolong' => $this->input->post('penolong'),
 					'nama_anak' => $this->input->post('nama'),
 					'kelamin_anak' => $this->input->post('kelamin'),
 					'tempat_lahir_anak' => $this->input->post('tempat'),
@@ -782,6 +783,7 @@ class Surat extends CI_Controller
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pendudukk'] = $this->m_penduduk->tampil();
 				$data['pendudukkk'] = $this->m_penduduk->tampil();
+				$data['pendudukkkk'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_surat_kelahiran->pejabat();
 				$this->load->view('header', $data);
 				$this->load->view('surat/tambah_surat_kelahiran', $data);
@@ -793,6 +795,7 @@ class Surat extends CI_Controller
 					'nik_ayah' => $this->input->post('ayah'),
 					'nik_ibu' => $this->input->post('ibu'),
 					'nik_pelapor' => $this->input->post('pelapor'),
+					'nik_penolong' => $this->input->post('penolong'),
 					'nama_anak' => $this->input->post('nama'),
 					'kelamin_anak' => $this->input->post('kelamin'),
 					'tempat_lahir_anak' => $this->input->post('tempat'),
@@ -813,6 +816,7 @@ class Surat extends CI_Controller
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pendudukk'] = $this->m_penduduk->tampil();
 				$data['pendudukkk'] = $this->m_penduduk->tampil();
+				$data['pendudukkkk'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_surat_kelahiran->pejabat();
 				$data['surat_kelahiran'] = $this->m_surat_kelahiran->edit_surat_kelahiran($this->uri->segment('4'));
 				$this->load->view('header', $data);
@@ -842,6 +846,7 @@ class Surat extends CI_Controller
 				$data = array(
 					'nik' => $this->input->post('nik'),
 					'nik_pelapor' => $this->input->post('pelapor'),
+					'nik_korban' => $this->input->post('korban'),
 					'umur_pelapor' => $this->input->post('umur'),
 					'tempat_kematian' => $this->input->post('tempat'),
 					'tanggal_kematian' => $this->input->post('tanggal'),
@@ -849,6 +854,8 @@ class Surat extends CI_Controller
 					'hari_kematian' => $this->input->post('hari'),
 					'id_pejabat' => $this->input->post('pejabat'),
 					'hubungan_sebagai' => $this->input->post('hubungan'),
+					'tempat_meninggal' => $this->input->post('tempat'),
+					'alasan_meninggal' => $this->input->post('alasan'),
 					'tanggal_surat_kematian' => date('Y-m-d'),
 				);
 				$this->m_surat_kematian->tambah_surat_kematian($data);
@@ -858,6 +865,7 @@ class Surat extends CI_Controller
 				$data['title'] = "Surat Kematian - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pendudukkk'] = $this->m_penduduk->tampil();
+				$data['penduduks'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_surat_kematian->pejabat();
 				$this->load->view('header', $data);
 				$this->load->view('surat/tambah_surat_kematian', $data);
@@ -869,12 +877,15 @@ class Surat extends CI_Controller
 					'nik' => $this->input->post('nik'),
 					'nik_pelapor' => $this->input->post('pelapor'),
 					'umur_pelapor' => $this->input->post('umur'),
+					'nik_korban' => $this->input->post('korban'),
 					'tempat_kematian' => $this->input->post('tempat'),
 					'tanggal_kematian' => $this->input->post('tanggal'),
 					'jam_kematian' => $this->input->post('jam'),
 					'hari_kematian' => $this->input->post('hari'),
 					'id_pejabat' => $this->input->post('pejabat'),
 					'hubungan_sebagai' => $this->input->post('hubungan'),
+					'tempat_meninggal' => $this->input->post('tempat'),
+					'alasan_meninggal' => $this->input->post('alasan'),
 				);
 				$where = array(
 					'id_surat_kematian' => $this->input->post('id'),
@@ -886,6 +897,7 @@ class Surat extends CI_Controller
 				$data['title'] = "Surat Kematian - Desa Banyusri";
 				$data['penduduk'] = $this->m_penduduk->tampil();
 				$data['pendudukkk'] = $this->m_penduduk->tampil();
+				$data['penduduks'] = $this->m_penduduk->tampil();
 				$data['pejabat'] = $this->m_surat_kematian->pejabat();
 				$data['surat_kematian'] = $this->m_surat_kematian->edit_surat_kematian($this->uri->segment('4'));
 				$this->load->view('header', $data);
@@ -1093,5 +1105,79 @@ class Surat extends CI_Controller
 			$this->load->view('surat/daftar_pemakaman');
 			$this->load->view('footer');
 		}
+		
 	}
+
+	public function surat_buktinikah()
+	{
+		if ($this->uri->segment('3') == "tambah") {
+			if ($this->input->post('tambah_surat_buktinikah')) {
+				$data = array(
+					'nama_pertama' => $this->input->post('namapertama'),
+					'nama_kedua' => $this->input->post('namakedua'),
+					'nama_ketiga' => $this->input->post('namaketiga') ,
+					'nama_keempat' => $this->input->post('namakeempat') ,
+					'no_kkk'=> $this->input->post('nokkk'),
+					'id_pejabat' => $this->input->post('pejabat'),
+					'tanggal_surat_buktinikah' => date('Y-m-d'),
+				);
+				$this->m_surat_buktinikah->tambah_surat_buktinikah($data);
+				$this->session->set_flashdata('sukses', 'Data berhasil ditambahkan.');
+				redirect(base_url('surat/surat_buktinikah/'));
+			} else {
+				$data['title'] = "Surat Bukti Nikah - Desa Banyusri";
+				$data['penduduk1'] = $this->m_penduduk->tampil();
+				$data['penduduk2'] = $this->m_penduduk->tampil();
+				$data['penduduk3'] = $this->m_penduduk->tampil();
+				$data['penduduk4'] = $this->m_penduduk->tampil();
+				$data['pejabat'] = $this->m_surat_buktinikah->pejabat();
+				$this->load->view('header', $data);
+				$this->load->view('surat/tambah_surat_buktinikah', $data);
+				$this->load->view('footer');
+			}
+		} elseif ($this->uri->segment('3') == "edit") {
+			if ($this->input->post('edit_surat_buktinikah')) {
+				$data = array(
+					'nama_pertama' => $this->input->post('namapertama'),
+					'nama_kedua' => $this->input->post('namakedua'),
+					'nama_ketiga' => $this->input->post('namaketiga') ,
+					'nama_keempat' => $this->input->post('namakeempat'),
+					'no_kkk'=> $this->input->post('nokkk'),
+					'id_pejabat' => $this->input->post('pejabat'),
+				);
+				$where = array(
+					'id_surat_buktinikah' => $this->input->post('id'),
+				);
+				$this->m_surat_buktinikah->proses_edit_surat_buktinikah($where, $data);
+				$this->session->set_flashdata('sukses', 'Data berhasil diedit.');
+				redirect(base_url('surat/surat_buktinikah/'));
+			} else {
+				$data['title'] = "Surat Bukti Nikah - Desa Banyusri";
+				$data['penduduk1'] = $this->m_penduduk->tampil();
+				$data['penduduk2'] = $this->m_penduduk->tampil();
+				$data['penduduk3'] = $this->m_penduduk->tampil();
+				$data['penduduk4'] = $this->m_penduduk->tampil();
+				$data['pejabat'] = $this->m_surat_buktinikah->pejabat();
+				$data['surat_buktinikah'] = $this->m_surat_buktinikah->edit_surat_buktinikah($this->uri->segment('4'));
+				$this->load->view('header', $data);
+				$this->load->view('surat/edit_surat_buktinikah', $data);
+				$this->load->view('footer');
+			}
+		} elseif ($this->uri->segment('3') == "cetak") {
+			$data['surat_buktinikah'] = $this->m_surat_buktinikah->cetak_surat_buktinikah($this->uri->segment('4'));
+			$this->load->view('surat/cetak_surat_buktinikah', $data);
+		} elseif ($this->uri->segment('3') == "hapus") {
+			$this->m_surat_buktinikah->hapus_surat_buktinikah($this->uri->segment('4'));
+			$this->session->set_flashdata('sukses', 'Data berhasil dihapus.');
+			redirect(base_url('surat/surat_buktinikah'));
+		} else {
+			$data['title'] = "Surat buktinikah - Desa Banyusri";
+			$data['surat'] = $this->m_surat_buktinikah->daftar_surat_buktinikah();
+			$mutasi = $this->load->view('header', $data);
+			$this->load->view('surat/daftar_surat_buktinikah');
+			$this->load->view('footer');
+		}
+	}
+
+
 }

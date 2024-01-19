@@ -29,7 +29,7 @@
 
                                     <div class="card-body">
                                         <div class="form-group">
-                                            <label>NIK</label><a href="<?php echo base_url(); ?>penduduk/tambah/"
+                                            <label>NIK Pembuat</label><a href="<?php echo base_url(); ?>penduduk/tambah/"
                                                 class="btn btn-sm btn-primary pull-right">Tambah
                                                 Penduduk</a><br /><br />
                                             <select name="nik" class="form-control" id="nama" required>
@@ -52,6 +52,20 @@
                                                     ?>
                                                 <option value="<?php echo $pendudukkk->nik; ?>">
                                                     <?php echo $pendudukkk->nik; ?> - <?php echo $pendudukkk->nama; ?>
+                                                </option>
+                                                <?php
+                                                endforeach;
+                                                ?>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>NIK Korban</label>
+                                            <select name="korban" class="form-control" id="nik" required>
+                                                <?php
+                                                foreach ($penduduks as $penduduks) :
+                                                    ?>
+                                                <option value="<?php echo $penduduks->nik; ?>">
+                                                    <?php echo $penduduks->nik; ?> - <?php echo $penduduks->nama; ?>
                                                 </option>
                                                 <?php
                                                 endforeach;
@@ -107,6 +121,19 @@
                                             <input type="text" name="hubungan" class="form-control"
                                                 placeholder="Hubungan Sebagai" required />
                                         </div>
+
+                                        <div class="form-group">
+                                            <label>Tempat Meninggal</label>
+                                            <input type="text" name="tempat" class="form-control"
+                                                placeholder="Tempat Meninggal" required />
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Alasan Meninggal</label>
+                                            <input type="text" name="alasan" class="form-control"
+                                                placeholder="Alasan Meninggal" required />
+                                        </div>
+
                                         <div class="form-group">
                                             <label>Tanda Tangan</label>
                                             <select name="pejabat" class="form-control" required>

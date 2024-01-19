@@ -73,6 +73,21 @@
                                             </select>
                                         </div>
                                         <div class="form-group">
+                                            <label>NIK Penolong</label>
+                                            <select name="penolong" class="form-control" id="nik3" required>
+                                                <?php
+                                                foreach ($pendudukkkk as $pendudukkkk) :
+                                                    ?>
+                                                <option value="<?php echo $pendudukkkk->nik; ?>">
+                                                    <?php echo $pendudukkkk->nik; ?> - <?php echo $pendudukkkk->nama; ?>
+                                                </option>
+                                                <?php
+                                                endforeach;
+                                                ?>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
                                             <label>Nama Anak</label>
                                             <input type="text" name="nama" class="form-control" placeholder="Nama Anak"
                                                 required />
