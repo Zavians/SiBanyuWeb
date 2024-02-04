@@ -64,19 +64,23 @@ body {
 .layout-top-nav .main-footer {
   margin-left: 0;
 }
-@media (max-width: 767px) {
+@media (max-width: 1400px) {
+  .container,
   .content-wrapper,
   .main-footer {
     margin-left: 0;
+    width: 50%;
   }
 }
 @media (min-width: 768px) {
+  .container,
   .sidebar-collapse .content-wrapper,
   .sidebar-collapse .main-footer {
     margin-left: 0;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1400px) {
+  .container,
   .sidebar-open .content-wrapper,
   .sidebar-open .main-footer {
     -webkit-transform: translate(230px, 0);
