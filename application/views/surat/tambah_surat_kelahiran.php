@@ -142,7 +142,7 @@
                                             </div>
 
                                             <div class="form-group">
-                                                <label>Hubungan Sebagai</label>
+                                                <label>Hubungan Pelapor Dengan Anak Sebagai /label>
                                                 <input type="text" name="hubungan" class="form-control"
                                                     placeholder="Hubungan Sebagai" required />
                                             </div>

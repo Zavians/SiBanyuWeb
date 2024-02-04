@@ -123,13 +123,13 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <label>Tempat Meninggal</label>
+                                            <label>Tempat Kematian</label>
                                             <input type="text" name="tempat" class="form-control"
                                                 placeholder="Tempat Meninggal" required />
                                         </div>
 
                                         <div class="form-group">
-                                            <label>Alasan Meninggal</label>
+                                            <label>Alasan Kematian</label>
                                             <input type="text" name="alasan" class="form-control"
                                                 placeholder="Alasan Meninggal" required />
                                         </div>

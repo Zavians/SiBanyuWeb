@@ -205,7 +205,7 @@ Yang Lahir Dengan Pertolongan:
 		<td></td>
 		<td></td>
 		<td></td>
-		<td style="text-align:center;">Yang membuat pernyataan</td>
+		<td style="text-align:center;">Yang mengetahui pernyataan</td>
 	</tr>
 
 	<tr>
@@ -287,7 +287,7 @@ Yang Lahir Dengan Pertolongan:
 		<td width="25%" style="text-align:center;">Saksi 2</td>
 		<td width="25%"></td>
 		<td width="20%"></td>
-		<td width="30%" style="text-align:center;">Yang mengetahui Pernyataan</td>
+		<td width="30%" style="text-align:center;">Yang membuat Pernyataan</td>
 	</tr>
 	<tr>
 		<td></td>

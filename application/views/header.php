@@ -104,9 +104,9 @@
 					<!-- <li><a href="<?php echo base_url('Kematian/tampil'); ?>"><i
 								class="fa fa-history" aria-hidden="true"></i> <span>Data
 								Kematian</span></a></li> -->
-					<li><a href="<?php echo base_url('pindah/tampil'); ?>"><i class="fa fa-exchange"
+					<!-- <li><a href="<?php echo base_url('pindah/tampil'); ?>"><i class="fa fa-exchange"
 								aria-hidden="true"></i> <span>Data Pindah</span></a>
-					</li>
+					</li> -->
 
 
 
@@ -116,7 +116,8 @@
                                                 //jika kepala desa atau sekertaris
                                                 if ($this->session->userdata('level') == 'sekertaris') {
                                                         ?>
-					<li><a href="<?php echo base_url('kelahiran/tampil_kelahiran'); ?>"><i class="fa fa-book"
+														
+					<!-- <li><a href="<?php echo base_url('kelahiran/tampil_kelahiran'); ?>"><i class="fa fa-book"
 								aria-hidden="true"></i> <span>Data
 								Kelahiran</span></a></li>
 					<li><a href="<?php echo base_url('Kematian/tampil_kematian'); ?>"><i class="fa fa-history"
@@ -125,7 +126,7 @@
 					<li><a href="<?php echo base_url('pindah/tampil_pindah2'); ?>"><i class="fa fa-exchange"
 								aria-hidden="true"></i>
 							<span>Data Pindah</span></a>
-					</li>
+					</li> -->
 
 
 

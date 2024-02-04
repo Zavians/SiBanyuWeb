@@ -29,7 +29,7 @@
 
                                     <div class="card-body">
                                         <div class="form-group">
-                                            <label>NIK</label>
+                                            <label>NIK Pembuat</label>
                                             <input type="hidden" name="id" class="form-control" required
                                                 value="<?php echo $surat_kematian->id_surat_kematian; ?>" />
                                             <select name="nik" class="form-control" id="nama" required>
